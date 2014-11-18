@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Molkmjolk</string>
+    <string name="hejhighscore">Nu är du i highscore</string>
+    <string name="action_settings">Settings</string>
+    <string name="play_button">PLAY</string>
+    <string name="highscore_button">HIGHSCORE</string>
+    <string name="settings_button">SETTINGS</string>
+    <string name="about_button">ABOUT</string>
+    <string name="hejsettings">Nu är du i settings</string>
+    <string name="hejplay">Nu är du i play</string>
+    <string name="hejabout">Nu är du i about</string>
+    <string name="butAboutUs">ABOUT US</string>
+    <string name="butInstructions">INSTRUCTIONS</string>
+    <string name="butMenu">MENU</string>
+
+    <string name="theme">Theme</string>
+    <string name="mute_sound">Mute sound</string>
+    <string name="mute_music">Mute music</string>
+
+
+    <string name="title_activity_input_highscore">input_highscore</string>
+    <string name="hello_world">Hello world!</string>
+
+
+</resources>
