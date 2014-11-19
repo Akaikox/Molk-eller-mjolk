@@ -2,16 +2,12 @@ package se.molk.molkmjolk;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ViewSwitcher;
 
-import java.util.LinkedList;
 import java.util.List;
 
 
@@ -52,11 +48,28 @@ public class Play extends Activity {
 
     }
 
-    private List<Integer> myCards = new LinkedList<Integer>();
+    // Define a list of possible cards to show
+    private List<Integer> myCardDeck = Arrays.asList(
+            R.drawable.molklogga2,
+            R.drawable.molklogga3,
+            R.drawable.molklogga4);
 
+    // Initiate a random number generator
+    private Random randomNumberGenerator = new Random();
+
+    // Call this method to show a random new card in the ImageView
     public void showNewCard() {
         ImageView iv = (ImageView) findViewById(R.id.myImage);
-        iv.setImageResource(R.drawable.molklogga2);
+        iv.setImageResource(getRandomCard());
+    }
+
+    // This function takes a random card from myCardDeck
+    public int getRandomCard() {
+        // Call the random number generator to get a random number between 0 and myCardDeck.size()
+        int randomCardNumber = randomNumberGenerator.nextInt(myCardDeck.size());
+
+        // return the card
+        return myCardDeck.get(randomCardNumber);
     }
 
 
